@@ -1,0 +1,23 @@
+[
+	{
+	    "id": 1,
+	    "videoUrl": "/media/video_1/clip.mp4",
+		"videoType": "video/mp4",
+	    "captionUrl": "/media/video_1/captions.srt",
+	    "title": "Video 1 Title"
+	},
+	{
+	    "id": 2,
+	    "videoUrl": "/media/video_2/clip.mp4",
+		"videoType": "video/mp4",
+	    "captionUrl": "/media/video_2/captions.srt",
+	    "title": "Video 2 Title"
+	},
+    {
+        "id": 3,
+        "videoUrl": "/media/video_3/clip.3gp",
+		"videoType": "video/3gp",
+        "captionUrl": "/media/video_3/captions.srt",
+        "title": "Video 3 Title"
+    }
+]
