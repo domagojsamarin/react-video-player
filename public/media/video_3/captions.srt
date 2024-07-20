@@ -1,0 +1,19 @@
+1
+00:00:04,626 --> 00:00:13,860
+Test caption 1
+
+2
+00:00:14,118 --> 00:00:15,975
+Test caption 2, the ocean is blue!
+
+3
+00:00:16,200 --> 00:00:17,721
+Test caption 3
+
+4
+00:00:23,279 --> 00:00:40,158
+Test caption 4, roses are red!
+
+5
+00:00:40,458 --> 00:00:46,552
+Test caption 5. Oh, how lovely...

@@ -4,29 +4,41 @@ import { Video } from './types/dataTypes';
 
 const App = () => {
   const [videos, setVideos] = useState<Video[]>([]);
+  const [selectedVideoId, setSelectedVideoId] = useState<number | null>(null);
 
   useEffect(() => {
     const getVideos = async () => {
       const videoData = await fetchVideos();
       console.log(videoData);
       setVideos(videoData);
+      if (videoData.length > 0) {
+        setSelectedVideoId(videoData[0].id);
+      }
     };
-
+  
     getVideos();
   }, []);
 
+  const handleVideoSelect = (videoId: number) => {
+    setSelectedVideoId(videoId);
+  }
+
   return (
-    <div>
-      {videos.map(video => (
+    <>
+      {videos.filter((video) => video.id === selectedVideoId).map((video) => (
         <div key={video.id}>
-          <h2>{video.title}</h2>
           <video controls>
             <source src={video.videoUrl} type={video.videoType} />
-            Your browser does not support the video tag.
+            <track src={video.captionUrl} kind="captions" />
           </video>
         </div>
       ))}
-    </div>
+      {videos.map((video) => (
+        <div key={video.id}>
+          <button onClick={() => handleVideoSelect(video.id)}>{video.title}</button>
+        </div>
+      ))}
+    </>
   );
 };
 
