@@ -1,12 +1,13 @@
 ### Step 1: Project Setup
 
 1. **Initialize Project**: Use Vite for a quick start.
-2. **Install Dependencies**: 
-    * Tailwind?
+2. **Try witouth Redux**
+3. **Install Dependencies**:
+   - Tailwind?
 
 ### Step 2: Directory Structure
 
-Organize project directory:
+Project directory:
 
 ```
 /video-captions-sync
@@ -41,22 +42,26 @@ Organize project directory:
 
 ### Step 4: Key Functionalities
 
-1. **Parsing SRT Files**: Use `parseSRT.ts` to convert SRT files into JSON objects that your React components can easily use.
-2. **Syncing Captions and Transcript**: Utilize `useVideoSync.ts` to manage the state of the current video time and update the captions and transcript accordingly.
+1. **Parsing SRT Files**: Use `parseSRT.ts` to convert SRT files into JSON objects.
+2. **Syncing Captions and Transcript**: Use `useVideoSync.ts` to manage the state of the current video time and update the captions and transcript accordingly.
 3. **Interactive Transcript**: In `Transcript.tsx`, implement click-to-seek functionality by updating the video's current time when a transcript time is clicked.
 4. **Styling Options**: Allow dynamic styling of captions through props in `CaptionsOverlay.tsx`, such as font size and background/text color.
 
 ### Step 5: Bonus Features
 
-- **Generic Video and SRT Handling**: Ensure your components can handle any video and SRT file by making file paths and names dynamic props.
-- **Additional Features**: Consider implementing additional features like adjustable playback speed, a button to toggle captions on/off, or even a dark mode for the transcript.
+- **Generic Video and SRT Handling**: Components should handle any video and SRT file by making file paths and names dynamic props (API delicered info?).
+- **Additional Features**: Implement additional features
+  - adjustable playback speed
+  - button to toggle captions on/off
+  - dark mode for the transcript
+  - variable caption size
 
 ### Step 6: Testing and Deployment
 
 - **Local Testing**: Test each component individually and then as a whole to ensure synchronization works correctly.
-- **Deployment**: Deploy your application using platforms like Netlify, Vercel, or GitHub Pages.
+- **Deployment**: Deploy to (maybe) Vercel or GitHub Pages.
 
 ### Step 7: Documentation and Sharing
 
-- **README.md**: Document your project setup, how to run it locally, and any other relevant information.
-- **GitHub**: Push your code to a public GitHub repository and share the link as requested.
+- **README.md**: Write proper docs, how to run it locally, and any other relevant information.
+- **Share on GitHub**
